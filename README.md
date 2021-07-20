@@ -9,10 +9,14 @@
 # Скриншоты
 
 ### Главная Страница
-![GitHub Logo](/images-project/Главная.png)
+![GitHub Logo](/images-project/Title.png)
+![GitHub Logo](/images-project/Title-Smartphone.png)
 ### Окно Авторизации
-![GitHub Logo](/images-project/Окно-Авторизации.png)
+![GitHub Logo](/images-project/Window-Login.png)
+![GitHub Logo](/images-project/Window-Login-Smartphone.png)
 ### Окно Регистрации
-![GitHub Logo](/images-project/Окно-Регистрации.png)
+![GitHub Logo](/images-project/Window-Registration.png)
+![GitHub Logo](/images-project/Window-Registration-Smartphone.png)
 ### Страница Со Списком Паролей
-![GitHub Logo](/images-project/Страница-С-Паролями.png)
+![GitHub Logo](/images-project/Window-With-Passwords.png)
+![GitHub Logo](/images-project/Window-With-Passwords-Smartphone.png)

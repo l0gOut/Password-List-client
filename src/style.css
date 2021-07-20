@@ -763,7 +763,6 @@ body {
 .phone-button-container .phone-button h4 {
   color: white;
   margin: 0;
-  text-shadow: 0 0 3px white;
 }
 
 .mobile-title-page {
@@ -834,7 +833,6 @@ body {
   margin: 0;
   padding: 0;
   color: white;
-  text-shadow: 0 0 5px white;
 }
 
 .mobile-title-page .button-mobile-container .button-mobile a {

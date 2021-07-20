@@ -9,8 +9,6 @@ import TitleHome from "./components/TitleHome";
 import Cookie from "js-cookie";
 import { queryUrl, sendRequest, urlUser } from "./api/index.js";
 
-import "./style.css";
-
 function App(props) {
   return (
     <div className="App">

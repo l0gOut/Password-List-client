@@ -1,9 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import "./css-reset.css";
+// import "./css-reset.css";
 import "semantic-ui-css/semantic.min.css";
 import "react-notifications-component/dist/theme.css";
+import "./style.css";
 import { createStore, compose } from "redux";
 import { Provider } from "react-redux";
 import { rootReducer } from "./redux/rootReducer";

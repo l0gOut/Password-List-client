@@ -1,0 +1,7 @@
+export const INIT = "USER/INIT";
+export const CREATE_USER = "USER/CREATE_USER";
+export const ADD_PASSWORD = "USER/ADD_PASSWORD";
+export const DELETE_PASSWORD = "USER/DELETE_PASSWORD";
+export const UPDATE_PASSWORD = "USER/UPDATE_PASSWORD";
+export const LOADING_TRUE = "LOADING/TRUE";
+export const LOADING_FALSE = "LOADING/FALSE";

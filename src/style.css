@@ -1,0 +1,1032 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.App .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: url("images/password.jpeg") no-repeat;
+  background-size: cover;
+  -webkit-animation: image-list 20s infinite linear;
+          animation: image-list 20s infinite linear;
+}
+
+.App .main .title-container {
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 1;
+}
+
+.App .main .title-container h1 {
+  text-align: center;
+  margin: 0 10px;
+  font-size: 86px;
+  color: white;
+  margin: 10px;
+}
+
+.App .main .buttons-action {
+  height: 40%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: solid white;
+  border-width: 2px 0 0 0;
+}
+
+.App .main .buttons-action div {
+  width: 33%;
+  height: 100%;
+}
+
+.App .main .buttons-action .paragraph {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: solid white;
+  border-width: 0 2px;
+}
+
+.App .main .buttons-action .paragraph p {
+  width: 90%;
+  text-align: justify;
+  color: white;
+  font-size: 32px;
+  margin: 20px 0;
+}
+
+.App .main .buttons-action .button-array {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.App .main .buttons-action .button-array h1 {
+  position: absolute;
+  color: white;
+  bottom: 5%;
+}
+
+.App .main .buttons-action .button-array a {
+  color: white;
+  font-size: 80px;
+  height: 150px;
+  width: 150px;
+  border: 4px solid white;
+  border-radius: 10px;
+  background: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.App .main .buttons-action .button-array a:hover {
+  border-color: gray;
+  color: gray;
+}
+
+.main:before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100vw;
+  height: 100vh;
+}
+
+.container-title-page {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
+
+.container-title-page .button-array {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 20%;
+}
+
+.container-title-page .button-array h1 {
+  position: absolute;
+  color: white;
+  bottom: 35%;
+}
+
+.container-title-page .button-array a {
+  color: white;
+  font-size: 80px;
+  height: 150px;
+  width: 150px;
+  border: 4px solid white;
+  border-radius: 10px;
+  background: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container-title-page .button-array a:hover, .container-title-page .button-array a:active, .container-title-page .button-array a:focus {
+  border-color: gray;
+  color: gray;
+  background: none;
+}
+
+.container-title-page .ui.loading.form:before {
+  border-radius: 15px;
+}
+
+.container-title-page .container-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+  height: 100%;
+  border-width: 0 2px;
+}
+
+.container-title-page .container-form h1 {
+  color: white;
+}
+
+.container-title-page .container-form .reg,
+.container-title-page .container-form .log {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: white;
+  -webkit-box-shadow: 0 0 10px 2px #646464;
+          box-shadow: 0 0 10px 2px #646464;
+  border: 1px solid gray;
+  border-radius: 15px;
+  height: 50%;
+  width: 35%;
+  min-width: 250px;
+}
+
+.container-title-page .container-form .reg .checkbox,
+.container-title-page .container-form .log .checkbox {
+  width: 75%;
+  margin: 15px;
+}
+
+.container-title-page .container-form .reg .message,
+.container-title-page .container-form .log .message {
+  width: 75%;
+}
+
+.container-title-page .container-form .reg .field,
+.container-title-page .container-form .log .field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 75%;
+  margin: 5px 0;
+}
+
+.container-title-page .container-form .reg .field .label,
+.container-title-page .container-form .log .field .label {
+  background: none;
+  color: black;
+}
+
+.container-title-page .container-form .reg .field input,
+.container-title-page .container-form .log .field input {
+  border: solid black;
+  border-width: 0 0 1px 0;
+  border-radius: 0;
+}
+
+.container-title-page .container-form .reg .field input:focus,
+.container-title-page .container-form .log .field input:focus {
+  border-radius: 0;
+}
+
+.container-title-page .container-form .reg button,
+.container-title-page .container-form .log button {
+  width: 75%;
+  color: white;
+  background: #00b445;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.container-title-page .container-form .reg button:active,
+.container-title-page .container-form .log button:active {
+  background: #00d652;
+}
+
+.container-title-page .container-form .reg button:focus,
+.container-title-page .container-form .log button:focus {
+  -webkit-box-shadow: 0 0 0 2px rgba(0, 180, 69, 0.25);
+          box-shadow: 0 0 0 2px rgba(0, 180, 69, 0.25);
+}
+
+@-webkit-keyframes image-list {
+  0%,
+  20%,
+  100% {
+    background-image: url("images/password.jpeg");
+  }
+  25%,
+  45% {
+    background-image: url("images/password-2.jpg");
+  }
+  50%,
+  70% {
+    background-image: url("images/password-3.jpg");
+  }
+  75%,
+  95% {
+    background-image: url("images/password-4.jpeg");
+  }
+}
+
+@keyframes image-list {
+  0%,
+  20%,
+  100% {
+    background-image: url("images/password.jpeg");
+  }
+  25%,
+  45% {
+    background-image: url("images/password-2.jpg");
+  }
+  50%,
+  70% {
+    background-image: url("images/password-3.jpg");
+  }
+  75%,
+  95% {
+    background-image: url("images/password-4.jpeg");
+  }
+}
+
+.password-menu {
+  background: white;
+  height: 100vh;
+}
+
+.password-menu hr {
+  border: none;
+  height: 2px;
+  background: black;
+}
+
+.password-menu .header {
+  background: black;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+  width: 100%;
+  z-index: 1;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.password-menu .header .block-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.password-menu .header .block-search input {
+  background: none;
+  border-width: 0 0 1px 0;
+  border-color: grey;
+  border-radius: 0;
+  color: white;
+}
+
+.password-menu .header .block-search input:focus {
+  background: none;
+  color: white;
+  border-width: 0 0 1px 0;
+}
+
+.password-menu .header .dropdown-account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.password-menu .header .dropdown-account.active > i {
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+
+.password-menu .header .dropdown-account .menu .item.active {
+  font-weight: 400;
+}
+
+.password-menu .create-password-container {
+  padding-top: 70px;
+  padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.password-menu .create-password-container .create-password {
+  background: #dfdfdf;
+  border: 1px solid black;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+  padding: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25%;
+}
+
+.password-menu .create-password-container .create-password .field {
+  margin: 25px 0;
+  width: 75%;
+}
+
+.password-menu .create-password-container .create-password .field .input input {
+  border-color: black;
+  border-width: 0 0 1px 0;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.password-menu .create-password-container .create-password .field .input input:focus {
+  border-color: #21a5fd;
+  border-radius: 0;
+}
+
+.password-menu .create-password-container .create-password button {
+  color: white;
+  background-color: black;
+  -webkit-transition: background-color 200ms, -webkit-box-shadow 200ms;
+  transition: background-color 200ms, -webkit-box-shadow 200ms;
+  transition: background-color 200ms, box-shadow 200ms;
+  transition: background-color 200ms, box-shadow 200ms, -webkit-box-shadow 200ms;
+  width: 75%;
+}
+
+.password-menu .create-password-container .create-password button:active {
+  background-color: #191919;
+}
+
+.password-menu .create-password-container .create-password button:focus {
+  -webkit-box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.6);
+}
+
+.password-menu .container-password-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.password-menu .container-password-block .password-header {
+  text-align: center;
+  font-size: 76px;
+}
+
+.password-menu .container-password-block .password-block {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px;
+  width: 23.5%;
+}
+
+.password-menu .container-password-block .password-block .password-block-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid black;
+  border-width: 0 0 1px 0;
+  border-radius: 5px 5px 0 0;
+  height: 20%;
+  background: #f0f0f0;
+}
+
+.password-menu .container-password-block .password-block .password-block-header h2 {
+  margin: 0 0 0 15px;
+}
+
+.password-menu .container-password-block .password-block .password-block-header button {
+  background: none;
+  font-size: 24px;
+  color: red;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  margin: 0;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.password-menu .container-password-block .password-block .password-block-header button:hover, .password-menu .container-password-block .password-block .password-block-header button:active {
+  background: none;
+  color: darkred;
+}
+
+.password-menu .container-password-block .password-block .password-info {
+  padding: 15px;
+  font-size: 16px;
+  background: #f8f9fa;
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.password-menu .container-password-block .password-block .password-info .password-info-block {
+  margin: 5px 0;
+}
+
+.password-menu .container-password-block .password-block .password-info .password-info-block .login,
+.password-menu .container-password-block .password-block .password-info .password-info-block .password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.password-menu .container-password-block .password-block .password-info .password-info-block .login p,
+.password-menu .container-password-block .password-block .password-info .password-info-block .password p {
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+.password-menu .container-password-block .password-block .password-update-button {
+  border: 1px solid black;
+  border-width: 1px 0 0 0;
+  height: 20%;
+}
+
+.password-menu .container-password-block .password-block .password-update-button button {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 3px 3px;
+  background: black;
+  color: white;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  margin: 0;
+  padding: 0;
+}
+
+.password-menu .container-password-block .password-block .password-update-button button:focus {
+  background: #191919;
+}
+
+.ui.modals .modal-delete .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ui.modals .modal-delete .header button {
+  background: none;
+  color: red;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.ui.modals .modal-delete .header button:hover {
+  color: darkred;
+}
+
+.ui.modals .modal-delete .content .input {
+  width: 100%;
+}
+
+.ui.modals .modal-delete .actions button {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.ui.modals .modal-update .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ui.modals .modal-update .header button {
+  background: none;
+  color: red;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.ui.modals .modal-update .header button:hover {
+  color: darkred;
+}
+
+.ui.modals .modal-update hr {
+  border: none;
+  height: 1px;
+  background: rgba(34, 36, 38, 0.15);
+}
+
+.ui.modals .modal-update .content p {
+  margin: 5px 0 2px 0;
+}
+
+.ui.modals .modal-update .content .input {
+  width: 100%;
+}
+
+.ui.modals .modal-update .actions button {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.ui.modals .modal-delete .content input,
+.ui.modals .modal-update .content input {
+  border-width: 0 0 1px 0;
+  border-color: solid;
+  border-radius: 0;
+}
+
+.ui.modals .modal-delete .content input:hover,
+.ui.modals .modal-update .content input:hover {
+  border-radius: 0;
+}
+
+.phone-button-container {
+  display: none;
+  height: 20%;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.phone-button-container .phone-button {
+  height: 100px;
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.phone-button-container .phone-button .ui.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  color: white;
+  width: 80px;
+  height: 80px;
+  border: 4px solid white;
+  border-radius: 10px;
+  background: none;
+  outline: none;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.phone-button-container .phone-button .ui.button:hover {
+  border-color: gray;
+  color: gray;
+}
+
+.phone-button-container .phone-button h4 {
+  color: white;
+  margin: 0;
+  text-shadow: 0 0 3px white;
+}
+
+.mobile-title-page {
+  display: none;
+  height: 100%;
+}
+
+.mobile-title-page h1 {
+  color: white;
+  font-size: 48px;
+  text-align: center;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.mobile-title-page hr {
+  width: 100%;
+  border: none;
+  height: 2px;
+  background: white;
+}
+
+.mobile-title-page p {
+  color: white;
+  font-size: 24px;
+  padding: 0 15px;
+  text-align: justify;
+  margin: 0;
+}
+
+.mobile-title-page .button-mobile-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 20%;
+}
+
+.mobile-title-page .button-mobile-container .title-mobile-container {
+  height: 80%;
+}
+
+.mobile-title-page .button-mobile-container .button-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+.mobile-title-page .button-mobile-container .button-mobile h4 {
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-shadow: 0 0 5px white;
+}
+
+.mobile-title-page .button-mobile-container .button-mobile a {
+  margin: 0;
+  padding: 0;
+  height: 80px;
+  width: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 36px;
+  color: white;
+  border: 4px solid white;
+  background: none;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1650px) {
+  .password-menu .container-password-block .password-block {
+    width: 31%;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .password-menu .create-password-container .create-password {
+    width: 50%;
+  }
+  .password-menu .container-password-block .password-block {
+    width: 47%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .App .main .title-container {
+    display: none;
+  }
+  .App .main .buttons-action {
+    display: none;
+  }
+  .mobile-title-page {
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .password-menu .create-password-container .create-password {
+    width: 90%;
+  }
+  .password-menu .container-password-block .password-block {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container-title-page {
+    height: 80%;
+  }
+  .container-title-page .button-array {
+    display: none;
+  }
+  .container-title-page .container-form {
+    width: 100%;
+  }
+  .container-title-page .container-form .form {
+    min-height: 325px;
+    height: 55%;
+  }
+  .phone-button-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .password-menu .header .block-search {
+    width: 35%;
+  }
+  .password-menu .header .block-search .grey.search.icon.search-icon {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .password-menu .header .block-search {
+    width: 28%;
+  }
+}
+
+.lds-ring {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+}
+
+.lds-ring div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  margin: 8px;
+  border: 16px solid black;
+  border-radius: 50%;
+  -webkit-animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+          animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: black transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+  -webkit-animation-delay: -0.45s;
+          animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  -webkit-animation-delay: -0.15s;
+          animation-delay: -0.15s;
+}
+
+@-webkit-keyframes lds-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes lds-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background: silver;
+  border: 2px solid white;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: gray;
+}
+/*# sourceMappingURL=style.css.map */
